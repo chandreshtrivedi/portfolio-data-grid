@@ -1,9 +1,11 @@
+## Author
+Chandresh Trivedi (chand.trivedi@gmail.com)
 # Orders Grid — High-Performance Data Grid Over 1M Rows
 
 A virtualized, infinite-scrolling data grid built to demonstrate how a frontend
 handles a genuinely large dataset without shipping it all to the browser.
 
-**Live demo:** _add your deployed link here_
+**Live demo:** https://portfolio-data-grid.vercel.app/
 **Stack:** React, TanStack Virtual, Express, SQLite (better-sqlite3)
 
 ## The problem
@@ -37,9 +39,9 @@ rather than doing it in the browser.
 
 ## Results
 
-- Initial page load (first 200 rows): **3518 ms**
-- Scroll performance at row 500,000: **smooth, 52.8 fps**
-- API response time for a filtered + sorted query over 1M rows: **4100 ms**
+- Initial page load (first 200 rows): **1422 ms**
+- Scroll performance at row 500,000: **smooth, 51.4 fps**
+- API response time for a filtered + sorted query over 1M rows: **1534 ms**
 - Total dataset size on disk: **414 MB** (SQLite file)
 
 ## Running it locally
@@ -62,12 +64,8 @@ To reduce seed time while developing, lower `TOTAL_ROWS` in `backend/seed.js`
 
 ## Deploying
 
-- **Backend:** Render or Railway both support a persistent disk, which you
-  need since the SQLite file must survive restarts. Set the seed step to run
-  once at deploy time (or commit the seeded `orders.db` file — it will be
-  large, so consider Git LFS or just seeding on first boot).
-- **Frontend:** Vercel or Netlify. Set `VITE_API_BASE` to your deployed
-  backend URL.
+- **Backend:** Render
+- **Frontend:** Vercel
 
 ## What this project is meant to show
 

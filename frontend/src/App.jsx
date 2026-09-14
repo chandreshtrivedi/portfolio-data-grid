@@ -5,7 +5,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>Orders Grid</h1>
+        <h1>Orders Grid - By Chandresh Trivedi (chand.trivedi@gmail.com)</h1>
         <p>
           A virtualized, infinite-scrolling grid over 1,000,000 synthetic e-commerce orders.
           Sorting and filtering hit the backend directly — the browser never holds more
