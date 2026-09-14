@@ -1,0 +1,6 @@
+node_modules/
+backend/orders.db
+backend/orders.db-shm
+backend/orders.db-wal
+dist/
+.env
