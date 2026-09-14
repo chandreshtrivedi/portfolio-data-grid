@@ -64,7 +64,7 @@ To reduce seed time while developing, lower `TOTAL_ROWS` in `backend/seed.js`
 
 ## Deploying
 
-- **Backend:** Render
+- **Backend:** Render (Render's free web services spin down after inactivity and take ~30-60s to wake up on the next request)
 - **Frontend:** Vercel
 
 ## What this project is meant to show
